@@ -1,44 +1,35 @@
-# :convenience_store: :shopping_cart: Case Study #5: Data Mart 
-<p align="center">
-<img src="https://8weeksqlchallenge.com/images/case-study-designs/5.png" alt="Image" width="450" height="450">
+# Birthday Wisher Project 🎉
 
-View the case study [here](https://8weeksqlchallenge.com/case-study-5/)
-  
-## Table Of Contents
-  - [Introduction](#introduction)
-  - [Problem Statement](#problem-statement)
-  - [Dataset used](#dataset-used)
-  - [Case Study Solutions](#case-study-solutions)
-  
-## Introduction
-Data Mart is Danny’s latest venture and after running international operations for his online supermarket that specialises in fresh produce - Danny is asking for your support to analyse his sales performance.
+This project is a Python-based automation tool that sends birthday wishes via email. It reads birthday data from a CSV file, checks for matches with today’s date, customizes a letter template, and sends a personalized email to the recipient.
 
-In June 2020 - large scale supply changes were made at Data Mart. All Data Mart products now use sustainable packaging methods in every single step from the farm all the way to the customer.
+## Features
 
-Danny needs your help to quantify the impact of this change on the sales performance for Data Mart and it’s separate business areas.
+1. **Automated Birthday Check**: Reads `birthdays.csv` to check if today matches any birthday.
+2. **Letter Personalization**: If there’s a match, the script randomly selects a congratulatory letter template and replaces `[NAME]` with the recipient’s name.
+3. **Email Sending**: Sends the customized message to the recipient via Gmail’s SMTP server.
 
-## Problem Statement
-The key business question he wants you to help him answer are the following:
+## Setup
 
-- What was the quantifiable impact of the changes introduced in June 2020?
-- Which platform, region, segment and customer types were the most impacted by this change?
- What can we do about future introduction of similar sustainability updates to the business to minimise impact on sales?
-  
-## Dataset used
-![image](https://user-images.githubusercontent.com/77529445/189491024-b9d273be-b82e-4ded-af3e-6dbfac0ed6cb.png)
+1. **Update `birthdays.csv`**:
+   - Add names, emails, and birthday dates in the following format:
 
-1. Data Mart has international operations using a multi-region strategy
-2. Data Mart has both, a retail and online platform in the form of a Shopify store front to serve their customers
-3. Customer segment and customer_type data relates to personal age and demographics information that is shared with Data Mart
-4. transactions is the count of unique purchases made through Data Mart and sales is the actual dollar amount of purchases
-Each record in the dataset is related to a specific aggregated slice of the underlying sales data rolled up into a week_date value which represents the start of the sales week.
+     | name  | email             | month | day |
+     |-------|--------------------|-------|-----|
+     | John  | john@example.com   | 5     | 17  |
+     | Alice | alice@example.com  | 8     | 23  |
 
-10 random rows are shown in the table output below from data_mart.weekly_sales
-![image](https://user-images.githubusercontent.com/77529445/189491192-978f144f-03b6-4dce-b69b-342e212e48e2.png)
+2. **Configure Email Credentials**:
+   - Update the `sender_email` and `password` fields in the script with your Gmail account credentials.
+
+## Usage
+
+1. **Add Letter Templates**:
+   - Place your birthday letter templates in the `letter_templates` directory (e.g., `letter_1.txt`, `letter_2.txt`, etc.).
+
+2. **Run the Script**:
+   - Execute the script to automatically send birthday wishes:
+     ```bash
+     python birthday_wisher.py
+     ```
 
 
-## Case Study Solutions
-- [A. Data Cleansing Steps](https://github.com/manaswikamila05/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%205%20-%20Data%20Mart/1.%20Data%20Cleansing%20Steps.md)
-- [B. Data Exploration]()
-- [C. Before & After Analysis]()
-- [D. Bonus Question]()
