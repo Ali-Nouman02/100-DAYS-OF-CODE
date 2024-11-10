@@ -19,3 +19,6 @@ Use a Gmail app password for enhanced security (recommended).
 python iss_notifier.py
 
 The script will check every minute if the ISS is overhead and visible. If so, it sends an email alert to the specified address.
+
+## What I Learned
+I learned how to work with APIs in this project, using real-time data from the ISS location API and a sunrise/sunset API.
