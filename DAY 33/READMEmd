@@ -1,0 +1,21 @@
+# ISS Location Notifier 🚀
+
+A Python script that notifies you via email when the International Space Station (ISS) is overhead and visible from your location.
+
+## Features
+- **Real-Time Tracking**: Checks ISS location to see if it’s near your coordinates.
+- **Nighttime Check**: Confirms it’s dark for better visibility.
+- **Email Alerts**: Sends an email notification when conditions are ideal.
+
+## Requirements
+- Python 3.x
+- `requests` library (for API calls)
+
+## Configure Script
+Replace **MY_LAT, MY_LONG, sender_email, password, and recipient email** in the script with your information.
+Use a Gmail app password for enhanced security (recommended).
+
+## Run the Script
+python iss_notifier.py
+
+The script will check every minute if the ISS is overhead and visible. If so, it sends an email alert to the specified address.
