@@ -1,40 +1,58 @@
-# Quizzler App 🧠
+# Stock Price and News Alert 🚀
 
-This project is a Python-based interactive quiz application built with **Tkinter**. It fetches trivia questions from the [Open Trivia Database](https://opentdb.com/) and provides users with a True/False quiz experience. The interface updates dynamically, tracks the score, and gives feedback based on the user's answers.
+This project is a Python-based automation tool that monitors stock prices and sends email alerts with news articles if the stock price changes significantly. It fetches stock price data from Alpha Vantage, retrieves relevant news articles from NewsAPI, and sends the updates via email.
 
 ## Features
 
-- **Interactive GUI**: Built with Tkinter, the app provides a clean and user-friendly graphical interface.
-- **Dynamic Question Fetching**: Retrieves trivia questions via an API, ensuring fresh content for every session.
-- **Score Tracking**: Displays the user's score in real-time.
-- **Feedback Mechanism**: Highlights correct answers with a green background and incorrect answers with red.
-- **End of Quiz Notification**: Notifies the user when there are no more questions left.
+1. **Stock Price Monitoring**:
+   - Tracks the daily closing price of a specific stock (e.g., Tesla Inc - `TSLA`).
+   - Calculates the percentage change between the last two trading days.
+
+2. **News Fetching**:
+   - If the price change exceeds 5%, fetches the top 3 news articles related to the company.
+
+3. **Email Alerts**:
+   - Sends an email for each news article, detailing the stock change, headline, and a brief description.
+
+4. **Customizable**:
+   - Easily replace the stock symbol (`STOCK_NAME`) and company name (`COMPANY_NAME`) to track other stocks.
 
 ## Setup
 
 1. **Install Required Libraries**:
-   Ensure you have Python installed along with the required libraries. Install the necessary dependencies:
+   Ensure you have Python installed along with the required libraries:
    ```bash
    pip install requests
    
-2. **Prepare Assets**:
-   Save the true.png and false.png button images in the same directory as your script.
+2. **Get API Keys**:
+   - Alpha Vantage API Key:replace YOUR_ALPHA_VANTAGE_API_KEY in the code.
 
-3. **Run the App**: Execute the script:
-   python main.py
+3. **Configure Email Credentials**:
+   Update the my_email and password variables with your email and password.
+   Replace the recipient email in to_addrs with the desired recipient.
    
-## How It Works
-1. **Fetching Questions**:
-   Questions are fetched from the Open Trivia Database using the following API endpoint:
-    ```bash
-   https://opentdb.com/api.php?amount=10&type=boolean
-2. **Gameplay**:
-  - The quiz displays one question at a time.
-  - Players select "True" or "False" by clicking the corresponding button.
-  - The app gives immediate feedback by changing the canvas color (green for correct, red for incorrect).
-  - The score updates in real-time.
-3. **End of Quiz**:
-    Once all questions are answered, the app displays a message indicating the end of the quiz and disables the buttons.
+4. **Run the Script: Execute the script**:
+     ```bash
+   python main.py
+
+## Code Workflow
+1. **Stock Data Fetching**:
+   Uses Alpha Vantage's TIME_SERIES_INTRADAY endpoint to fetch stock prices.
+      
+2. **Price Change Calculation**:
+   Calculates the percentage difference between the closing prices of the last two trading days.
+   If the change exceeds 5%, triggers news fetching and email alerts.
+   
+3. **News Articles Retrieval**:
+   Fetches the top 3 news articles from NewsAPI for the specified company.
+   
+4. **Email Alerts**:
+  Sends an email with:
+  The stock ticker and percentage change (up or down).
+  A headline and a brief description of each news article.
+
+
+
 
 
 
