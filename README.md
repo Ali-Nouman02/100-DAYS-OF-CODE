@@ -34,5 +34,10 @@
 - [Day 29](DAY%2029): Building a Password Manager GUI App with Tkinter
 - [Day 30](DAY%2030): Errors, Exceptions and JSON Data: Improving the Password Manager
 - [Day 31](DAY%2031): Capstone Project - Flash Card App
+
+## 🏋🏻‍♂️ Intermediate+
 - [Day 32](DAY%2032): Email Automation Script - Birthday Wisher
 - [Day 33](DAY%2033): API Endpoints & API Parameters - International Space Station Overhead Notifier
+- [Day 34](DAY%2033): API Practice - Creating a GUI Quiz App
+- [Day 35](DAY%2033): Keys, Authentication and Environment Variables - Project skipped
+- [Day 36](DAY%2033): Stock Trading News Alert Project
