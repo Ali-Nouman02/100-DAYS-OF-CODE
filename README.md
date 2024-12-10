@@ -1,4 +1,5 @@
 # 100-DAYS-OF-CODE
+I do these projects in my free time to deepen my knowledge of Python's extensive library and keep my coding skills sharp through consistent practice.
 
 ## 👨🏻‍🎓 Beginner
 - [Day 1]: Working with Variables in Python to Manage Data
