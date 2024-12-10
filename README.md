@@ -38,11 +38,11 @@
 ## 🏋🏻‍♂️ Intermediate+
 - [Day 32](DAY%2032): Email Automation Script - Birthday Wisher
 - [Day 33](DAY%2033): API Endpoints & API Parameters - International Space Station Overhead Notifier
-- [Day 34](DAY%2033): API Practice - Creating a GUI Quiz App
-- [Day 35](DAY%2033): Keys, Authentication and Environment Variables - Project skipped
-- [Day 36](DAY%2033): Stock Trading News Alert Project
-- [Day 37](DAY%2033): Habit Tracking Project: API Post Requets & Headers
-- [Day 38](DAY%2033): Workout Tracking Using Google Sheets
-- [Day 39](DAY%2033): Capstone Part1: Flight Deal Finder
-- [Day 40](DAY%2033): Capstone Part2: Flight Deal Finder
-- [Day 41](DAY%2033): Web Foundation- Introduction to HTML
+- [Day 34](DAY%2034): API Practice - Creating a GUI Quiz App
+- [Day 35](DAY%2035): Keys, Authentication and Environment Variables - Project skipped
+- [Day 36](DAY%2036): Stock Trading News Alert Project
+- [Day 37](DAY%2037): Habit Tracking Project: API Post Requets & Headers
+- [Day 38](DAY%2038): Workout Tracking Using Google Sheets
+- [Day 39](DAY%2039): Capstone Part1: Flight Deal Finder
+- [Day 40](DAY%2040): Capstone Part2: Flight Deal Finder
+- [Day 41](DAY%2041): Web Foundation- Introduction to HTML
